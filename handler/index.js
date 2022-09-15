@@ -14,15 +14,15 @@ module.exports = async (client) => {
     }
   })
 
-  console.log(SlashCommands)
+  console.log(SlashCommands) //você pode deletar isso se quiser, só adicionei para checar se tudo estava nos conformes!
   
   client.on("ready", () => {
     console.log(client.user.username + ' Está online e funcional!') //...
     console.log("Slash Commands | OK!") //avisando no console
-    client.guilds.cache.get("808717459695599636").commands.set(SlashCommands)
+    client.guilds.cache.get("808717459695599636").commands.set(SlashCommands) //comando locais (em um único servidor)
     /**
-     * caso queira que os comandos seja globais, use:
-     * client.application.commands.set(SlashCommands)
+     * caso queira que os comandos seja globais, apage a linha de cima e use:
+     * client.application.commands.set(SlashCommands) //lembrando que demora cerca de ~1h para os comandos aparecerem
      */
   })
 
