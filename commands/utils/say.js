@@ -22,7 +22,7 @@ module.exports = {
     const hide = interaction.options.getBoolean('ephemeral') || false //se o usuário quiser que a mensagem apareça só para ele
 
     interaction.reply({
-      content: "Mensagem enviada por: " + interaction.user.tag + "\n" + argument,
+      content: "Mensagem enviada por: " + interaction.user.tag + "\n" + argument.replace(/@/g, "@\u200b"), //evitar das pessoas mencionerem cargos/membros/everyone/here pelo comando!
       ephemeral: hide
     })
 
