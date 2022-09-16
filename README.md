@@ -7,4 +7,8 @@ Para iniciar ligar o bot você deve inserir o token no arquivo index.js (lá est
 É só isso, deixem uma estrelinha nesse repositório!
 
 ## Instalação
-Para instalar os arquivos desse repositório você pode usar
+Para instalar os arquivos desse repositório você pode usar o git clone:
+
+```md
+git clone https://github.com/xYuriizin/Slash-Commands-Discord.js-v14.git
+```
