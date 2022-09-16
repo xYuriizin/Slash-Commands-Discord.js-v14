@@ -3,12 +3,24 @@
 ## Descrição
 
 Fiz esse repositório para ajudar vocês a iniciar no Discord.js v14, espero que todos gostem e possam se beneficiar disso!
-Para iniciar ligar o bot você deve inserir o token no arquivo index.js (lá está comentado onde exatamente deve ser colocado), logo em seguida entre em handler/index.js para dizer se você quer os comandos globalmente ou em um único servidor (também comentado para facilitar para você)!
-É só isso, deixem uma estrelinha nesse repositório!
 
 ## Instalação
-Para instalar os arquivos desse repositório você pode usar o git clone:
+Para instalar os arquivos desse repositório você pode usar git clone:
 
 ```md
 git clone https://github.com/xYuriizin/Slash-Commands-Discord.js-v14.git
 ```
+ou apenas instalar os arquivos!
+
+## Modo de uso
+```diff
++ após você ter instalado todos os arquivos corretamente, entre no arquivo "index.js" na raíz do projeto e insira seu token onde é informado!
+- em seguida vá ao arquivo index.js que se encontra dentro da pasta "handler" e coloque o ID do seu servidor.
++ após isso abra seu terminal e use "node index.js" e será avisado se tudo ocorrer bem!
+```
+
+## Requisitos
+Saber o minimo de JavaScript, ter algum conhecimento da livraria Discord.js e só!
+
+## Licença
+Você é livre para copiar e editar o código a vontade! Mas lembre-se <strong>VENDER O CÓDIGO É COMPLETAMENTE PROIBIDO!</strong>
