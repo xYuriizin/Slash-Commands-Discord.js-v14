@@ -49,8 +49,8 @@ client.on("interactionCreate", async (interaction) => {
     }
 
     return interaction.followUp({ //respondendo ao eval somente para você (evitar vazar tokens e afins né kk)
-      content: "```js\n" + res.slice(0, 1980)  + "\n```", //não queremos que passe do limite máximo de caracteres né...
-      ephemeral: true
+      content: "```js\n" + res.replace(/client.token/g, "CENSURED_TOKEN").slice(0, 1980)  + "\n```", //não queremos que passe do limite máximo de caracteres né...
+      ephemeral: res.includes(client.token)
     })
 
   }
