@@ -16,7 +16,7 @@ ou apenas instalar os arquivos!
 ```diff
 + após você ter instalado todos os arquivos corretamente, entre no arquivo "index.js" na raíz do projeto e insira seu token onde é informado!
 - em seguida vá ao arquivo index.js que se encontra dentro da pasta "handler" e coloque o ID do seu servidor.
-+ após isso abra seu terminal e use "node index.js" e será avisado se tudo ocorrer bem!
++ após isso abra seu terminal e use "npm i" para instalar todas as dependências necessárias e depois "node index.js" e será avisado se tudo ocorrer bem!
 ```
 
 ## Requisitos
