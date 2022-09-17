@@ -14,12 +14,12 @@ module.exports = async (client) => {
     }
   })
 
-  const guilds = ['925092527168700436', '955093002001481788', '1007365207905026088', '808717459695599636', '905867817600049173']
+  const guilds = ['925092527168700436', '955093002001481788', '1007365207905026088', '808717459695599636', '905867817600049173'] //id dos servidores que você quiser que apareçam os comandos imediatamente! (separados por vírgula e entre aspas!)
   
   client.on("ready", () => {
     console.log(client.user.username + ' Está online e funcional!') //...
     console.log("Slash Commands | OK!") //avisando no console
-    guilds.map(x => client.guilds.cache.get(x).commands.set(SlashCommands))
+    guilds.map(x => client.guilds.cache.get(x).commands.set(SlashCommands)) //se você quiser que apareça apenas no seu servidor, use a linha de baixo dessa:
     //client.guilds.cache.get("808717459695599636").commands.set(SlashCommands)
     /**
      * caso queira que os comandos seja globais, use:
