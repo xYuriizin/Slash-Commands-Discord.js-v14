@@ -1,10 +1,15 @@
 module.exports = {
   name: "ping",
-  description: "Veja minha latência!",
+  description: "[ℹ INFORMAÇÕES] Veja minha latência!",
   run: async(client, interaction) => {
-    interaction.reply({
-      content: "**" + client.ws.ping + "ms**",
-      ephemeral: true
+
+    let msg = await interaction.reply({
+      content: "calculando...",
+      fetchReply: true
+    })
+
+    msg.edit({
+      content: `**${client.ws.ping}ms**`
     })
   }
 }

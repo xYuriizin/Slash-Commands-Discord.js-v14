@@ -2,7 +2,7 @@ const { ApplicationCommandOptionType } = require("discord.js")
 
 module.exports = {
   name: "say",
-  description: "Me faça falar algo!",
+  description: "[🛠 UTILIDADES] Me faça falar algo!",
   options: [
     {
       type: ApplicationCommandOptionType.String,
